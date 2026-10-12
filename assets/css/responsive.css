@@ -1,0 +1,257 @@
+/**
+ * Rohit Garg – Executive Personal Branding Website
+ * Responsive Architecture & Media Queries
+ * Strict Rule: Exclusively for viewport & device adaptations.
+ */
+
+/* --- Extra Large Viewports (>= 1440px) --- */
+@media (min-width: 1440px) {
+  .container-custom {
+    max-width: 1360px;
+  }
+
+  .editorial-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-slide-headline {
+    font-size: 4.5rem;
+  }
+}
+
+/* --- Standard Desktop (1200px - 1439px) --- */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero-slide-content {
+    padding: 4.5rem 0;
+  }
+}
+
+/* --- Medium Desktop & Small Laptop (992px - 1199px) --- */
+@media (max-width: 1199.98px) {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-padding-lg {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .contact-info-panel,
+  .contact-form-panel {
+    padding: 2.75rem 2rem;
+  }
+
+  .book-showcase-box {
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* --- Tablets & Horizontal Mobile (768px - 991.98px) --- */
+@media (max-width: 991.98px) {
+  .site-header {
+    --header-height: 74px;
+  }
+
+  .section-padding {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .section-padding-lg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-slider-section,
+  .hero-slider-container {
+    min-height: 75vh;
+  }
+
+  .hero-slide-content {
+    padding: 3.5rem 0 5rem;
+  }
+
+  .hero-slide-headline {
+    font-size: 2.75rem;
+  }
+
+  .editorial-title {
+    font-size: 2.35rem;
+  }
+
+  .contact-info-panel::after {
+    display: none;
+  }
+
+  .portrait-accent-box {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    max-width: 100%;
+    margin-top: 1.25rem;
+  }
+
+  .timeline-track {
+    padding-left: 1.75rem;
+  }
+
+  .timeline-item::before {
+    left: -1.75rem;
+  }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 767.98px) {
+  /* 15% Mobile Sticky Cap rule: ensure top bar & header don't consume excess height */
+  .top-info-bar {
+    display: none; /* Hide top info bar on mobile to respect sticky viewport cap */
+  }
+
+  .site-header {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .brand-monogram {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+  }
+
+  .brand-text-name {
+    font-size: 1.15rem;
+  }
+
+  .hero-slider-section,
+  .hero-slider-container {
+    min-height: 580px;
+  }
+
+  .hero-slide-content {
+    padding: 2.5rem 0 4.5rem;
+  }
+
+  .hero-slide-headline {
+    font-size: 2.15rem;
+  }
+
+  .hero-slide-text {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-slide-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero-slide-actions .btn-gold,
+  .hero-slide-actions .btn-outline-gold {
+    width: 100%;
+  }
+
+  .editorial-title {
+    font-size: 1.85rem;
+  }
+
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .section-padding-lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-kicker {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+
+  .contact-info-panel,
+  .contact-form-panel {
+    padding: 2rem 1.25rem;
+  }
+
+  .book-showcase-box {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .review-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .gallery-grid-item {
+    aspect-ratio: 16/10;
+  }
+
+  .back-to-top-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .site-footer {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-bottom-bar {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+/* --- Narrow Mobile Viewports (<= 425px & 375px & 320px) --- */
+@media (max-width: 425px) {
+  .hero-slide-headline {
+    font-size: 1.95rem;
+  }
+
+  .editorial-title {
+    font-size: 1.65rem;
+  }
+
+  .btn-gold,
+  .btn-outline-gold,
+  .btn-dark {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.8125rem;
+  }
+
+  .accordion-custom .accordion-button {
+    font-size: 1rem;
+    padding: 1.15rem 1rem;
+  }
+
+  .accordion-custom .accordion-body {
+    padding: 0 1rem 1.25rem;
+    font-size: 0.925rem;
+  }
+
+  .value-card {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-text-name {
+    font-size: 1.05rem;
+  }
+
+  .hero-slide-headline {
+    font-size: 1.75rem;
+  }
+
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
